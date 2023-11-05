@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Скрытие элемента с помощью jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+         $("#hide-button").click(function() {
+          $("#element-to-hide").hide();
+         });
+        });
+    </script>
+</head>
+<body>
+<button id="hide-button">Скрыть элемент</button>
+<div id="element-to-hide">Этот элемент будет скрыт</div>
+</body>
+</html>

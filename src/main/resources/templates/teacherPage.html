@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+         var newDiv = $("<div><span>Hello</span></div>");
+         newDiv.appendTo("#main");
+         $("#main").append("Example");
+        });
+    </script>
+    <style>
+        #layer{
+            height:1000px;
+            width:100%;
+            background-color: gray;
+            display: flex;
+
+        }
+        #top{
+            background-color: white;
+            display: flex;
+            font-family: Avantgarde;
+
+
+        }
+        .logo{
+            width: 100px;
+            height: 100px;
+        }
+        #userBox{
+            padding-left: 80%;
+        }
+        #list{
+            width:200px;
+        }
+        #main{
+            padding-left:50px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="top">
+    <div class="logo">
+        <img src="logo.png" width="80" height="73">
+    </div>
+    <div id="moto"><span>Sfedu Space</span></div>
+    <div id = "userBox">
+        <span>Name</span>
+        <span>Surname</span>
+    </div>
+</div>
+<div id="layer">
+    <div id="list"></div>
+    <div id="main"></div>
+</div>
+</body>
+</html>

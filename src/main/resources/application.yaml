@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/University
+    username: mish
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create
+
+  main:
+    allow-circular-references: true
+filepath:
+  tasks: /home/mish/Рабочий стол/tasks
+  lections: /home/mish/Рабочий стол/lections.
